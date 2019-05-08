@@ -1,9 +1,14 @@
+<!doctype html>
 <html lang="en">
   <head>    
     <title>TimeCalc</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
+    <div class="container" id="app">
+    </div>
     <script src='https://cdn.jsdelivr.net/npm/aurelia-script@1.3.0'></script>
     <script>
       const aurelia = new au.Aurelia();
@@ -14,7 +19,7 @@
           .developmentLogging();
       aurelia
         .start()
-        .then(() => aurelia.setRoot('app.js', document.body));
+        .then(() => aurelia.setRoot('app.js', document.getElementById("app")));
     </script>
   </body>
 </html>
