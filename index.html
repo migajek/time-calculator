@@ -1,1 +1,18 @@
-foo 
+<html lang="en">
+  <head>
+    <title>Aurelia Script Tag App</title>
+  </head>
+  <body>
+    <script src='https://cdn.jsdelivr.net/npm/aurelia-script@1.3.0'></script>
+    <script>
+      const aurelia = new au.Aurelia();
+      aurelia
+        .use
+          .standardConfiguration()
+          .developmentLogging();
+      aurelia
+        .start()
+        .then(() => aurelia.setRoot('app.js', document.body));
+    </script>
+  </body>
+</html>
