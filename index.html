@@ -1,5 +1,6 @@
 <html lang="en">
   <head>
+    <base href="/time-calculator">
     <title>Aurelia Script Tag App</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
           .developmentLogging();
       aurelia
         .start()
-        .then(() => aurelia.setRoot('./app.js', document.body));
+        .then(() => aurelia.setRoot('app.js', document.body));
     </script>
   </body>
 </html>
