@@ -1,12 +1,12 @@
 <html lang="en">
-  <head>
-    <base href="/time-calculator">
+  <head>    
     <title>Aurelia Script Tag App</title>
   </head>
   <body>
     <script src='https://cdn.jsdelivr.net/npm/aurelia-script@1.3.0'></script>
     <script>
       const aurelia = new au.Aurelia();
+      aurelia.container.get(au.Loader).baseUrl = location.href;
       aurelia
         .use
           .standardConfiguration()
